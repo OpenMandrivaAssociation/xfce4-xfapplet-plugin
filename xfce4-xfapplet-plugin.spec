@@ -1,17 +1,16 @@
-%define oname xfce4-xfapplet-plugin
-
 Summary:	XfApplet is a plugin for the Xfce panel
-Name:		xfce-xfapplet-plugin
+Name:		xfce4-xfapplet-plugin
 Version:	0.1.0
-Release:	%mkrel 6
-License:	GPL
+Release:	%mkrel 7
+License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
-Source0:	http://goodies.xfce.org/_media/projects/panel-plugins/%{oname}-%{version}.tar.bz2
-Requires:	xfce-panel >= 4..3
-BuildRequires:	xfce-panel-devel >= 4.3
+Source0:	http://goodies.xfce.org/_media/projects/panel-plugins/%{name}-%{version}.tar.bz2
+Requires:	xfce-panel >= 4.4
+BuildRequires:	xfce-panel-devel >= 4.4
 BuildRequires:	gnome-panel-devel >= 2.0.0
-BuildRequires:	libxfcegui4-devel >= 4.3
+BuildRequires:	libxfcegui4-devel >= 4.4
+Obsoletes:	xfce-xfapplet-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-builfroot
 
 %description
@@ -20,7 +19,7 @@ functionallity, its only purpose is to enable one to use Gnome applets inside
 the Xfce 4 panel just as they are used inside the Gnome panel.
 
 %prep
-%setup -qn %{oname}-%{version}
+%setup -q
 
 %build
 %configure2_5x
@@ -30,15 +29,15 @@ the Xfce 4 panel just as they are used inside the Gnome panel.
 rm -rf %{buildroot}
 %makeinstall_std 
  
-%find_lang %{oname}
+%find_lang %{name}
 
 %clean
 rm -rf %{buildroot}
 
-%files -f %{oname}.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
-%doc AUTHORS COPYING ChangeLog INSTALL NEWS README
-%dir %{_datadir}/%{oname}
+%doc AUTHORS ChangeLog NEWS README
+%dir %{_datadir}/%{name}
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/pixmaps/*.svg
 %{_datadir}/xfce4/panel-plugins/*.desktop
