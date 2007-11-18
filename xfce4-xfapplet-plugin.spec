@@ -6,10 +6,10 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
 Source0:	http://goodies.xfce.org/_media/projects/panel-plugins/%{name}-%{version}.tar.bz2
-Requires:	xfce-panel >= 4.4
-BuildRequires:	xfce-panel-devel >= 4.4
+Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	gnome-panel-devel >= 2.0.0
-BuildRequires:	libxfcegui4-devel >= 4.4
+BuildRequires:	libxfcegui4-devel >= 4.4.2
 Obsoletes:	xfce-xfapplet-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-builfroot
 
