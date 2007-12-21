@@ -11,6 +11,7 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	gnome-panel-devel >= 2.0.0
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 Obsoletes:	xfce-xfapplet-plugin
+BuildRoot:	%{_tmppath}/%{name}-%{version}-builfroot
 
 %description
 XfApplet is a plugin for the Xfce panel. The plugin itself has no special
