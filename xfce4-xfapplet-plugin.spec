@@ -1,4 +1,4 @@
-Summary:	XfApplet is a plugin for the Xfce panel
+Summary:	Plugin for the Xfce panel
 Name:		xfce4-xfapplet-plugin
 Version:	0.1.0
 Release:	%mkrel 7
