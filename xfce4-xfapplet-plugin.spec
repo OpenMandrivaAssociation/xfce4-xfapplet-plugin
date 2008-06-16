@@ -1,7 +1,7 @@
 Summary:	Plugin for the Xfce panel
 Name:		xfce4-xfapplet-plugin
 Version:	0.1.0
-Release:	%mkrel 8
+Release:	%mkrel 9
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
@@ -41,4 +41,4 @@ rm -rf %{buildroot}
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/pixmaps/*.svg
 %{_datadir}/xfce4/panel-plugins/*.desktop
-%{_datadir}/xfce4-xfapplet-plugin/ui/XFCE_Panel_Popup.xml
+%{_datadir}/xfce4-xfapplet-plugin
