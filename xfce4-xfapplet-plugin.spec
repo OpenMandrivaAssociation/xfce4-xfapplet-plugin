@@ -44,3 +44,4 @@ rm -rf %{buildroot}
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/pixmaps/*.svg
 %{_datadir}/xfce4/panel-plugins/*.desktop
+%{_datadir}/%{name}/ui/XFCE_Panel_Popup.xml
