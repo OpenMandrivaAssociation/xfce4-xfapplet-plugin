@@ -10,6 +10,8 @@ Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	gnome-panel-devel >= 2.0.0
 BuildRequires:	libxfcegui4-devel >= 4.4.2
+BuildRequires:  libORBit2-devel
+
 Obsoletes:	xfce-xfapplet-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-builfroot
 
