@@ -4,7 +4,7 @@ Version:	0.1.0
 Release:	17
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
+URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
 Source0:	http://goodies.xfce.org/_media/projects/panel-plugins/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
