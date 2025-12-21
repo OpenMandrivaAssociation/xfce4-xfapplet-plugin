@@ -7,6 +7,11 @@ Group:		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
 Source0:	http://goodies.xfce.org/_media/projects/panel-plugins/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
 BuildRequires:	gnome-panel-devel >= 2.0.0
 BuildRequires:	pkgconfig(libxfcegui4-1.0)
